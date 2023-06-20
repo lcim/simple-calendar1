@@ -39,9 +39,10 @@ main{
   padding: 9px;
 }
 .date-time-picker {
-  max-width: 120px;
+  min-width: 120px;
   min-height: 24px;
   display: inline;
+  text-overflow: ellipsis;
 }
 .btn-submit{
   background-color: rgba(43, 9, 236, 0.9);
