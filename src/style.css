@@ -39,7 +39,7 @@ main{
   padding: 9px;
 }
 .date-time-picker {
-  min-width: 120px;
+  max-width: 120px;
   min-height: 24px;
   display: inline;
   text-overflow: ellipsis;
