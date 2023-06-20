@@ -11,9 +11,9 @@ export default function NewEvents({ setNewEvent, newEvent, addNewEvent }) {
         <div className="events">
             <input type="text" value={newEvent.title} placeholder="Add event title" onChange={(e) => setNewEvent(evt => { return {...evt, title: e.target.value} })} />
             <div className="date-picker">
-                <DatePicker className="date-time-picker" type="text" selected={newEvent.start} showTimeSelect dateFormat="Pp" placeholder="Add start time" 
+                <DatePicker className="date-time-picker" type="text" selected={newEvent.start} showTimeSelect dateFormat="Pp" placeholder={"Click to add start time"} 
                 onChange={(start ) => setNewEvent( { ...newEvent, start } )} />
-                <DatePicker className="date-time-picker" type="text" selected={newEvent.end} showTimeSelect dateFormat="Pp" placeholder="Add end time" 
+                <DatePicker className="date-time-picker" type="text" selected={newEvent.end} showTimeSelect dateFormat="Pp" placeholder={"Click to add end time" }
                     onChange={(end) => setNewEvent({ ...newEvent, end })} />
             </div>
             <button className="btn-submit" onClick={ () => newEvent.end && newEvent.start && newEvent.title && addNewEvent()}>Enter</button>
