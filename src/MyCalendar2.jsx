@@ -62,14 +62,11 @@ export default function MyCalendar(props) {
     
     }
 
-    const showEvents = () => {
-        const event = document.getElementsByClassName(".events")
-        event.addClass("visible")
-    }
 
     return (<div>
         <Calendar
             localizer={localizer}
+            // components={props.allEvents}
             events={props.allEvents}
             startAccessor="start"
             endAccessor="end"

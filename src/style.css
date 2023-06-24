@@ -1,5 +1,5 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 main{
@@ -20,7 +20,7 @@ main{
   background-color: rgba(255, 238, 189, 0.7);
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 400px;
   padding-inline: 1.5%;
   border-radius: 11px;
   padding-block: 11px;
@@ -28,21 +28,24 @@ main{
 .events input {
   background-color: rgba(127, 255, 212, 0.2);
   border-radius: 9px;
-  min-height: 24px;
+  min-height: 33px;
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 0.25rem;
+  text-overflow: ellipsis; 
+  /* text-align: center; */
+  border: 2px solid rgba(143, 188, 143, 0.5)
 }
-.date-picker {
+/* .date-picker {
   display: flex;
   justify-content: space-around;
   align-items: center; 
   gap: 0.5rem;
   margin-inline: auto;
   padding: 9px;
-}
+} */
 .date-time-picker {
-  max-width: 120px;
-  min-height: 24px;
-  display: inline;
-  text-overflow: ellipsis;
+  /* min-height: 24px; */
 }
 .btn-submit{
   background-color: rgba(43, 9, 236, 0.9);
@@ -50,8 +53,10 @@ main{
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 0.5rem;
-  max-width: 75px;
+  min-width: 75px;
   min-height: 34px;
   margin-inline: auto;
 }
-
+.invisible {
+  display: none;
+}
